@@ -1,4 +1,4 @@
-# e-Gov Data Catalog (data-e-gov-go-jp)
+# e-Gov Data Catalog
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,29 +64,102 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-e-Gov Data Catalog is a national government open-data portal for Japan running **CKAN**, exposing a standardized catalog API over ~18,366 datasets.
+e-Gov Data Catalog is a national government open-data portal for Japan running CKAN. It exposes the CKAN catalog API, a standardized machine-readable interface over approximately 18,366 datasets, supporting programmatic dataset search, metadata retrieval, and resource access. Because it runs CKAN, it shares a consistent API surface with every other CKAN portal, making it uniformly harvestable and integrable.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/data-e-gov-go-jp/refs/heads/main/apis.yml)
+**Areas:** Open Data · CKAN · Data Catalog · DCAT · Government Data · National Government · Japan
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=data-e-gov-go-jp-api-evangelist&utm_content=repo)
+## e-Gov Data Catalog on APIs.io
 
-## Type
-- **kind:** government  ·  **software:** CKAN  ·  **version:** 2.9.5
+Everything profiled for e-Gov Data Catalog is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/data-e-gov-go-jp/](https://apis.io/providers/data-e-gov-go-jp/)** — or go straight to one of the APIs or properties below.
 
-## API
-- **e-Gov Data Catalog CKAN Action API** — base `https://data.e-gov.go.jp/data/api/3/action`. [Docs](https://docs.ckan.org/en/latest/api/) · [Portal](https://data.e-gov.go.jp/data)
-- Live endpoint verified: `https://data.e-gov.go.jp/data/api/3/action/status_show` · ~18,366 datasets
+### APIs (1)
 
-## Plans, Rate Limits, FinOps
-- [Plans](plans/data-e-gov-go-jp-plans-pricing.yml) — Free / open public data API.
-- [RateLimits](rate-limits/data-e-gov-go-jp-rate-limits.yml) — No published limit; harvest politely.
-- [FinOps](finops/data-e-gov-go-jp-finops.yml) — Public open data; no usage-based billing.
+- [e-Gov Data Catalog CKAN Action API](https://apis.io/apis/data-e-gov-go-jp/catalog/) — CKAN Action API for e-Gov Data Catalog, a consistent JSON-over-HTTP interface over a catalog of 18,366 datasets. Standard actions include package_search,…
 
-## Timestamps
-- **Created:** 2026-06-04
-- **Modified:** 2026-06-04
+### Published properties
 
-## Maintainers
-**FN:** Kin Lane
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-**Email:** kin@apievangelist.com
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Data E Gov Go Jp Domain Security](https://apis.io/security/data-e-gov-go-jp/data-e-gov-go-jp-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Data E Gov Go Jp Plans Pricing](https://apis.io/plans/data-e-gov-go-jp/data-e-gov-go-jp-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Data E Gov Go Jp Rate Limits](https://apis.io/rate-limits/data-e-gov-go-jp/data-e-gov-go-jp-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Data E Gov Go Jp Finops](https://apis.io/finops/data-e-gov-go-jp/data-e-gov-go-jp-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://data.e-gov.go.jp/data)
+- [Documentation](https://docs.ckan.org/en/latest/api/)
+
+## API Evangelist rating
+
+**Kin Score 9.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 5.3 |
+| Developer ergonomics | 9.5 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.9** — Government & Public Sector
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/data-e-gov-go-jp/](https://apis.io/providers/data-e-gov-go-jp/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for e-Gov Data Catalog: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/data-e-gov-go-jp/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
